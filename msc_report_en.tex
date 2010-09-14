@@ -1,0 +1,107 @@
+\documentclass[11pt,twoside,a4paper,final]{report}
+
+\usepackage{afterpage} 
+\usepackage{amsmath}   
+\usepackage{booktabs}  
+\usepackage{enumerate} 
+\usepackage{rotating}  
+\usepackage{times}     
+\usepackage{graphicx}  
+\usepackage{natbib}    
+% Using Hungarian Letters
+\usepackage[magyar]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+
+\raggedbottom
+% Master Report Initial Details
+\def\maintitle{Geo-Wiki}
+\def\subtitle{Térkép alapú Wikipedia}
+\def\authors{Nguyen Binh - ELTE IK}
+\def\supervisors{Témavezető: Dr. Márton Mátyás}
+
+
+% Start the document
+\begin{document}
+
+
+\newpage
+
+% Page numbering, options are arabic (Arabic numerals), roman	(Lowercase Roman), Roman (Uppercase Roman)
+% alph (lowercase letters) and Alph (Uppercase letters)
+\pagenumbering{Roman}
+\pagestyle{plain}
+
+% Include table of contents
+\tableofcontents
+
+% Remove the % in front of the command below to include a list of tables
+%\listoftables
+
+% Remove the % in front of the command below to include a list of figures
+%\listoffigures
+
+\newpage
+% Use arabic numbering throughout the text
+\pagenumbering{arabic}
+
+% Include an abstract of your report
+\abstract{
+
+Place your abstract text here
+
+} 
+
+% Start with the first chapter
+\chapter{Bevezetés}
+% With \label you can define a crossreference so that you can refer
+% to this chapter later in the text by using Chapter~\ref{ch:background}
+\label{ch:bevezetés}
+	\section{Térképészet}
+	\label{ch:térkép}
+	
+	\section{Informatika}
+	\label{ch:informatika}
+
+\chapter{Térképészet}
+\label{sec:térképészet}
+% Define the first section 
+	\section{Térképszerkesztés, Térképtervezés}
+	\label{sec:szerkesztés,tervezés}
+	
+	\section{Tematikus - Szak térképek ábrázolási módszerei}
+	\label{sec:tematikus,szak,térkép,ábrázolás}
+
+	\section{Tematikus - Szak térképek szerkesztése}
+	\label{sec:tematikus,szak,szerkesztés}
+
+\chapter{Wikipedia}
+\label{ch:wiki,wikipedia}
+
+
+\chapter{\ldots}
+\label{ch:sample}
+
+\ldots
+
+   
+% Insert the references
+\bibliographystyle{plainnat}
+\bibliography{library/studlib}
+
+% Anything behind this command will be treated as an appendix
+\appendix
+
+% Insert the first appendix
+\chapter{Appendix 1}
+\label{app:appendix1}
+
+Appendix text \ldots
+
+% insert a second appendix
+\chapter{Appendix 2}
+\label{app:appendix2}
+
+Appendix text \ldots
+
+\end{document}
